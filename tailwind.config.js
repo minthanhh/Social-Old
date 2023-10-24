@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui";
+import aspectRatio from '@tailwindcss/aspect-ratio'
 export default {
   content: [
     "./index.html",
@@ -47,8 +48,7 @@ export default {
         secondary: "888888"
       },
       fontFamily: {
-        lemonada: ['Lemonada', 'cursive'],
-        comfortaa: ['Comfortaa', 'cursive']
+        lemonada: ['Lemonada', 'cursive']
       },
       screens: {
         
@@ -58,6 +58,6 @@ export default {
       }
     },
   },
-  plugins: [daisyui],
+  plugins: [daisyui, aspectRatio],
 }
 

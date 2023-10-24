@@ -38,20 +38,24 @@ const Sidebar = () => {
    ];
 
    return (
-      <div className="sticky h-full w-[20%] bg-white shadow-sm">
+      <div className="sticky h-full w-[15%] bg-white">
          <div className="mt-[30px] flex flex-col justify-center gap-[10px] border-b border-[#999999] px-[15px] pb-[10px] text-center">
             <div className="flex flex-col items-center gap-1">
-               <div className="flex h-[100px] w-[100px] items-center justify-center rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500">
-                  <img
-                     className="h-[95px] w-[95px] rounded-full border-[2px] border-white object-cover"
-                     src={AvatarImage}
-                     alt=""
-                  />
+               <div className="gradient w-2/5 rounded-full p-[2px]">
+                  <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-full">
+                     <img
+                        className="rounded-full border-2 border-white object-cover"
+                        src={
+                           'https://plus.unsplash.com/premium_photo-1670999762807-7f570598aba6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+                        }
+                        alt=""
+                     />
+                  </div>
                </div>
                <h3 className="text-base font-bold">Minh Thành</h3>
                <span className="font-normal">Developer</span>
             </div>
-            <div className="flex items-center justify-center gap-5">
+            <div className="flex items-center justify-center gap-2">
                <div className="flex flex-col">
                   <span className="font-bold">623</span>
                   <span className="text-xs font-normal uppercase">POSTS</span>
@@ -81,8 +85,6 @@ const Sidebar = () => {
                />
             ))}
          </div>
-
-         <div></div>
       </div>
    );
 };

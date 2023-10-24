@@ -4,7 +4,15 @@ import { FaUserTag } from 'react-icons/fa';
 import { HiOutlineGif } from 'react-icons/hi2';
 import { BiSolidMap, BiImageAdd } from 'react-icons/bi';
 
-const AdditonalContent = () => {
+interface AdditionalContentProps {
+   onSelectSection?: () => void;
+   selectedSection?: boolean;
+}
+
+const AdditonalContent: React.FC<AdditionalContentProps> = ({
+   onSelectSection,
+   // selectedSection,
+}) => {
    const multiMedia = [
       {
          mediaIcon: BiImageAdd,
@@ -27,6 +35,7 @@ const AdditonalContent = () => {
          <div className="flex items-center gap-2">
             {multiMedia.map((media, idx) => (
                <MediaSection
+                  onSelectSection={onSelectSection}
                   key={media.mediaIcon + idx}
                   mediaIcon={media.mediaIcon}
                />

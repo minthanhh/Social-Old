@@ -8,7 +8,7 @@ import Button from '@/components/Button/Button';
 
 const Auth = () => {
    const [variant, setVariant] = useState('login');
-   const [isLoading, setIsLoading] = useState(false);
+   // const [isLoading, setIsLoading] = useState(false);
 
    const {
       reset,
@@ -54,7 +54,7 @@ const Auth = () => {
                   <div className="flex w-full flex-col items-center justify-center">
                      <InputForm
                         label="Email or username:"
-                        disabled={isLoading}
+                        // disabled={isLoading}
                         placeholder="Enter your username or password"
                         type="text"
                         icon={HiOutlineMail}
@@ -66,7 +66,7 @@ const Auth = () => {
                      />
                      <InputForm
                         label="Password:"
-                        disabled={isLoading}
+                        // disabled={isLoading}
                         placeholder="Please enter a password"
                         type="password"
                         icon={RiGitRepositoryPrivateLine}
@@ -82,7 +82,7 @@ const Auth = () => {
                   <div className="flex w-full flex-col items-center justify-center">
                      <InputForm
                         label="Username:"
-                        disabled={isLoading}
+                        // disabled={isLoading}
                         placeholder="Enter your username or password"
                         type="text"
                         icon={FaRegCircleUser}
@@ -94,7 +94,7 @@ const Auth = () => {
                      />
                      <InputForm
                         label="Email:"
-                        disabled={isLoading}
+                        // disabled={isLoading}
                         placeholder="Please enter a password"
                         type="email"
                         icon={HiOutlineMail}
@@ -107,7 +107,7 @@ const Auth = () => {
 
                      <InputForm
                         label="Password:"
-                        disabled={isLoading}
+                        // disabled={isLoading}
                         placeholder="Enter your username or password"
                         type="password"
                         icon={RiGitRepositoryPrivateLine}
@@ -121,7 +121,7 @@ const Auth = () => {
 
                      <InputForm
                         label="Cofirm Password:"
-                        disabled={isLoading}
+                        // disabled={isLoading}
                         placeholder="Please enter a password"
                         type="password"
                         icon={RiGitRepositoryPrivateLine}

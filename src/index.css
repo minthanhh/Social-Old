@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,9 +13,33 @@ html {
 body {
    width: 100%;
    height: 100%;
-   font-family: 'Comfortaa', cursive;
+   font-family: 'Lemonada', cursive;
    font-size: 14px;
 }
+
+.scroll-none::-webkit-scrollbar {
+   display: none;
+}
+
+::-webkit-scrollbar {
+   width: 5px;
+}
+ 
+ /* Track */
+::-webkit-scrollbar-track {
+   background: transparent;
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 10px;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {  
+   background: #555;
+ }
 
 #root {
    height: 100%;
@@ -60,3 +84,20 @@ body {
       @apply transition-all duration-150 ease-linear;
    }
 }
+
+
+
+
+.borderGradient {
+   border-image-source: linear-gradient(45deg,
+      #f6654e 10%,
+      #f17a92 55%,
+      #f1afbb 100%
+   ); 
+   border-image-slice: 1;
+   @apply border-b border-solid
+}
+
+
+/* Helvetica, "Microsoft YaHei", "微软雅黑", Arial, sans-serif */
+
